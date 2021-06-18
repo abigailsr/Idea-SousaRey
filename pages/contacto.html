@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+    <header><h1>¡contactate con nosotros!</h1>
+<nav>
+            <ul class="padreFlex" >
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="perros.html"> Perros</a></li>
+                <li><a href="gatos.html">Gatos</a></li> 
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html"> Contacto</a></li>
+    </ul>
+</nav>
+    </header>
+<main><form action="usuario.php" method="POST">
+        
+<label for="nombreUsuario" class="grupoLabel">Ingrese su nombre</label>
+<input type="text" id="nombreUsuario" placeholder="maximo 10 caracteres" class="transInput">
+
+<br>
+<label for="email" class="grupoLabel">Ingrese su email</label>
+<input type="email" id="email" placeholder="usuario@mail.com" class="transInput">
+
+<br>
+<label for="edad" class="grupoLabel">Ingrese su edad</label>
+<input type="number" id="edad" >
+
+<fieldset>
+    <legend>Medidas de tu perro o gato</legend>
+        <select name="" id="">
+            <option value="">XXL</option>
+            <option value="">XL</option>
+            <option value="">L</option>
+            <option value="">M</option>
+            <option value="">S</option>
+        </select>
+</fieldset>
+
+<br>
+<!--Caja de texto para comentarios-->
+<br><label for="comentario" class="grupoLabel">Ingrese un comentario</label>
+<textarea name="" id="comentario" cols="30" rows="10" placeholder="escribe un comentario"></textarea>
+
+<br>
+<!--RADIO-->
+<p>Seleccione su sexo</p>
+F<input type="radio"name="sexoUsuario">
+M<input type="radio"name="sexoUsuario">
+Otro <input type="radio"name="sexoUsuario">
+
+<br>
+<!--CHECKBOX-->
+ACEPTAR <input type="checkbox">
+<br>
+<!--BOTONES-->
+<br><input type="submit" value="Enviar Formulario"> <!--ENVIA FORMULARIO A SERVIDOR-->
+<br><input type="reset"value="Resetear Formulario"> <!--RESETEA EL FORMULARIO-->
+<br><input type="button"value="No funciona"><!--NO HACE NADA. PENSADO PARA JS-->
+
+
+    </form></main>
+    <br>
+    <footer>
+        <div>Tel:15-2222-4444</div>   
+        <div>Av. Libertador xxxx</div>
+        <div>¡seguinos en nuestras redes sociales!</div> 
+<a href="https://www.facebook.com"><img src="../images/facebook.png" alt="fb" class="imgRedes"></a>
+<a href="https://www.instagram.com"><img src="../images/instagram.png" alt="instagram" class="imgRedes"></a>
+<br>
+
+</footer>
+</body>
+</html>
