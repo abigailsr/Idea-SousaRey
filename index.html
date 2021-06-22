@@ -5,66 +5,96 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nanoluna Pet shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="css/estilos.css">
+
+
 </head>
 
 <body>
     <!--Aqui va logo de la empresa-->
 <header>
-<h1>Nanoluna Pet Shop</h1>
+<h1>Nanoluna Pet Shop</h1> 
 <p class="eslogan">Mascotas más felices</p> 
 
 
-    <!--AQUI COLOCO MENU INTERACTIVO-->
-<nav>
-    <ul class="padreFlex">
-    <li><a href="index.html"><b>Home</b></a></li>
-    <li><a href="pages/productos.html"><b>Productos</b></a></li>
-    <li><a href="pages/perros.html"><b> Perros</b></a></li>
-    <li><a href="pages/gatos.html"><b>Gatos</b></a></li> 
-    <li><a href="pages/nosotros.html"><b>Nosotros</b></a></li>
-    <li><a href="pages/contacto.html"><b> Contacto</b></a></li>
-</ul>
-</nav>
+    <!--AQUI COLOCO MENU INTERACTIVO con BOOTSTRAP-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid"> 
+        <a class="navbar-brand" href="index.html">Home</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="pages/productos.html">Productos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="pages/perros.html">Perros</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="pages/gatos.html">Gatos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="pages/nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="pages/contacto.html">Contacto</a>
+            </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
 </header>
 <main>
 <h2>A que nos dedicamos</h2>
 
 <section><img src="images/mascotas.jpg" alt="perros y gatos" class="imgIndex"> </section>
-<p class="grupoParrafos">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores ab cumque, hic adipisci dolor architecto doloremque quaerat perferendis animi. Eaque unde veritatis exercitationem natus, qui autem animi quibusdam excepturi dolor?</p>
-<p class="grupoParrafos">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab possimus commodi tempore consectetur labore! Quaerat consequuntur dolorem vitae delectus saepe voluptas, exercitationem ipsam error culpa corrupti excepturi, voluptates et? Officia. </p>
+<!--AQUI COLOCO PARRAFOS DENTRO DE CONTENEDORES (BOOTSTRAP)-->
+<div class="container"> <div class="row"><p class="grupoParrafos"><div class="col-md4- cpl-xs6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores ab cumque, hic adipisci dolor architecto doloremque quaerat perferendis animi. Eaque unde veritatis exercitationem natus, qui autem animi quibusdam excepturi dolor?</p>
+<p class="grupoParrafos">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab possimus commodi tempore consectetur labore! Quaerat consequuntur dolorem vitae delectus saepe voluptas, exercitationem ipsam error culpa corrupti excepturi, voluptates et? Officia. </p></div></div></div>
 <section><img src="images/mascotas2.jpg" alt="cuadros perros" class="imgIndex"> </section>
-
-<!--AQUI COLOCO TABLA-->
+<div class="container"> <div class="row"><div class="col-md4- cpl-xs6"><p class="grupoParrafos">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores ab cumque, hic adipisci dolor architecto doloremque quaerat perferendis animi. Eaque unde veritatis exercitationem natus, qui autem animi quibusdam excepturi dolor?</p>
+    <p class="grupoParrafos">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab possimus commodi tempore consectetur labore! Quaerat consequuntur dolorem vitae delectus saepe voluptas, exercitationem ipsam error culpa corrupti excepturi, voluptates et? Officia. </p></div></div></div>
+<br>
+<!--AQUI COLOCO TITULO DE TABLA-->
 <h2>Beneficios de nuestro Pet shop</h2>
 <br>
-<br>
-<section>
-<table>
-    <caption>Petshop Nanoluna</caption>
-    <tr>
-        <th>Inicio de actividades</th>
-        <th>¿por qué elegirnos?</th>
-        <th>sucursales</th>
-        <th>Comentarios de nuestros clientes</th>
-    </tr>
-    <tr>
-<td>1 agosto 2005</td>
-<td>Nos dedicamos con nuestro corazon al bienestar animal</td>
-<td >contamos con mas sucursales
-    <ol id="lista">
-        <li>villa crespo</li>
-        <br>
-        <li>Palermo</li>
-        <br>
-        <li>Boedo</li>
-    </ol>
-</td>
-<td>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque laboriosam itaque hic, fuga qui, incidunt dignissimos quod nostrum ex nulla, dolores nisi impedit ullam delectus corporis! Unde perferendis aliquid aliquam.</td>
 
-</tr>
-</table>
-</section>
+<!--AQUI COLOCO TABLA BOOTSTRAP-->
+<table class="table">
+    <thead> 
+    <tr class="table-dark" >
+        <th scope="col">Inicio de Actividades</th>
+        <th scope="col">¿Por qué elegirnos?</th>
+        <th scope="col">Sucursales</th>
+        <th scope="col">Comentarios de nuestros clientes</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td scope="row">1 Agosto 2005</td>
+        <td>Nos dedicamos con nuestro corazón al bienestar animal</td>
+        <td>Contamos con mas sucursales:
+        <ul id="lista">
+            <br>
+            <li>Villa Crespo</li>
+            <br>
+            <li>Palermo</li>
+            <br>
+            <li>Boedo</li>
+        </ul></td>
+
+        <td>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur veniam facilis, quo reiciendis dolorem consectetur omnis accusamus aut aperiam, ab dolorum nobis voluptas nisi, a dolore! Autem eum magnam excepturi.
+        </td>
+    </tr>
+
+
+    </tbody>
+</table> 
 </main>
 <br>
 <footer class="piePagina">

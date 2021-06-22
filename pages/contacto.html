@@ -5,20 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/estilos.css">
+    
 </head>
 <body>
     <header><h1>¡contactate con nosotros!</h1>
-<nav>
-            <ul class="padreFlex" >
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="productos.html">Productos</a></li>
-                <li><a href="perros.html"> Perros</a></li>
-                <li><a href="gatos.html">Gatos</a></li> 
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="contacto.html"> Contacto</a></li>
-    </ul>
-</nav>
+    <!--AQUI COLOCO MENU INTERACTIVO con BOOTSTRAP-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">Home</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="productos.html">Productos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="perros.html">Perros</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="gatos.html">Gatos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
     </header>
 <main><form action="usuario.php" method="POST">
         
