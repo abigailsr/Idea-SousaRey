@@ -34,7 +34,7 @@ font-style:initial;color: rgb(12, 36, 36);
 
 }
 .eslogan{
-    text-align: center; color: violet;
+    text-align: center; color: rgb(63, 8, 63);
 }
 /*Transicion de algunos Input*/
 .transInput{
@@ -61,7 +61,7 @@ font-style:initial;color: rgb(12, 36, 36);
 .imgIndex{
     /*transicion de imagenes*/
     height: 200px;
-    transition-duration: 2s;
+    transition-duration: 2s; 
     
 }
 
@@ -70,8 +70,8 @@ font-style:initial;color: rgb(12, 36, 36);
         height: 400px;
     }
 
-    /*transicion de imagenes*/
-    .imgProd {
+/*transicion de imagenes*/
+.imgProd {
         width:450px;
         height:400px;
         transition-duration: 2;
@@ -81,6 +81,7 @@ font-style:initial;color: rgb(12, 36, 36);
     height: 500px;
     width: 550px;
 }
+
 
 /* DEFINO ESTILOS POR SELECTOR  */
 table {color: rgb(1, 15, 1); border-style:solid; font-style: italic; border: solid;   
@@ -109,7 +110,7 @@ footer{
     }
 
     header{
-        background-color: rgb(102, 102, 235);
+        background-color: rgb(246, 148, 250);
     }
 
 div{
