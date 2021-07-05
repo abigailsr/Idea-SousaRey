@@ -49,20 +49,52 @@
     </nav>
 </header>
 <main>
-<h2>A que nos dedicamos</h2>
+    <div id="demo" class="carousel slide" data-ride="carousel">
 
+        <!-- INDICADORES -->
+        <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+
+        <!-- MUESTRA IMAGENES-->
+        <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="images/perropc.jpg" alt="mascotas" class="imgCarousel">
+        </div>
+        <div class="carousel-item" >
+            <img src="images/mascotas3.jpg" alt="mascotas" class="imgCarousel">
+        </div>
+        <div class="carousel-item">
+            <img src="images/dueñoperro.jpg" alt="mascotas" class="imgCarousel">
+        </div> 
+        </div>
+    
+        <!-- CONTROLES IZQUIERDO Y DERECHO-->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        </a>
+    
+    </div>
+
+
+
+
+    <h2>A que nos dedicamos</h2>
 <section><img src="images/mascotas.jpg" alt="perros y gatos" class="imgIndex"> </section>
 <!--AQUI COLOCO PARRAFOS DENTRO DE CONTENEDORES (BOOTSTRAP)-->
 <div class="container"> <div class="row"><p class="grupoParrafos"><div class="col-md4- cpl-xs6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores ab cumque, hic adipisci dolor architecto doloremque quaerat perferendis animi. Eaque unde veritatis exercitationem natus, qui autem animi quibusdam excepturi dolor?</p>
 <p class="grupoParrafos">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab possimus commodi tempore consectetur labore! Quaerat consequuntur dolorem vitae delectus saepe voluptas, exercitationem ipsam error culpa corrupti excepturi, voluptates et? Officia. </p></div></div></div>
-<section><img src="images/mascotas2.jpg" alt="cuadros perros" class="imgIndex"> </section>
 <div class="container"> <div class="row"><div class="col-md4- cpl-xs6"><p class="grupoParrafos">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores ab cumque, hic adipisci dolor architecto doloremque quaerat perferendis animi. Eaque unde veritatis exercitationem natus, qui autem animi quibusdam excepturi dolor?</p>
     <p class="grupoParrafos">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab possimus commodi tempore consectetur labore! Quaerat consequuntur dolorem vitae delectus saepe voluptas, exercitationem ipsam error culpa corrupti excepturi, voluptates et? Officia. </p></div></div></div>
 <br>
-<!--AQUI COLOCO TITULO DE TABLA-->
-<h2>Beneficios de nuestro Pet shop</h2>
-<br>
 
+<!--AQUI COLOCO TITULO DE TABLA-->
+<h2 id="tituloTabla">Beneficios de nuestro Pet shop</h2>
 <!--AQUI COLOCO TABLA BOOTSTRAP-->
 <table class="table">
     <thead> 
@@ -88,7 +120,10 @@
         </ul></td>
 
         <td>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur veniam facilis, quo reiciendis dolorem consectetur omnis accusamus aut aperiam, ab dolorum nobis voluptas nisi, a dolore! Autem eum magnam excepturi.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur veniam facilis,
+        <br>quo reiciendis dolorem consectetur omnis accusamus aut aperiam, ab dolorum nobis voluptas nisi, a dolore! Autem eum magnam excepturi.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut dolor mollitia enim quidem voluptates odio ullam quod autem voluptas? In tempora amet quaerat magni.
+        <br>Cupiditate blanditiis ducimus obcaecati quibusdam! Similique?
         </td>
     </tr>
 
@@ -100,10 +135,12 @@
 <footer class="piePagina">
 <div>Tel:15-2222-4444</div>   
 <div>Av. Libertador xxxx</div>
-<div>¡seguinos en nuestras redes sociales!</div> 
+<p >¡seguinos en nuestras redes sociales!</p> 
 <a href="https://www.facebook.com"><img src="./images/facebook.png" alt="fb" class="imgRedes"></a>
 <a href="https://www.instagram.com"><img src="./images/instagram.png" alt="instagram" class="imgRedes"></a>
 </footer>
-
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js"integrity="sha384-3qaqj0lc6sV/qpzrc1N5DC6i1VRn/HyX4qdPaiEFbn54VjQBEU341pvjz7Dv3n6P"crossorigin="anonymous"></script>
 </body>
 </html>

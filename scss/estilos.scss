@@ -1,0 +1,202 @@
+/*RESET*/
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+//Variables
+$font-family: "calibri";
+$height: auto;
+$width: auto;
+$color-parrafos: rgb(9, 9, 58);
+
+/*INICIO DE CSS*/
+
+/* DEFINO ESTILOS POR MEDIO DE CLASES*/
+.padreFlex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.grupoParrafos {
+  color: $color-parrafos;
+  font-family: $font-family;
+  font-size: larger;
+}
+
+//EXTEND
+.piePagina {
+  @extend .grupoParrafos;
+  font-size: medium;
+}
+
+.grupoLabel {
+  display: grid;
+  grid-template-columns: 100px;
+  grid-template-rows: 50px;
+  grid-template-areas: none;
+  grid-area: auto;
+}
+.eslogan {
+  text-align: center;
+  color: rgb(63, 8, 63);
+}
+/*Transicion de algunos Input*/
+.transInput {
+  width: 100;
+  height: 20px;
+  transition: all 1s;
+}
+/*Propiedad duracion Input*/
+
+.transInput:hover {
+  width: 200px;
+  font-size: 25px;
+}
+/*transicion de IMG REDES*/
+.imgRedes {
+  width: 30px;
+  height: 30px;
+  transition-duration: 1s;
+}
+/*propiedad de duracion Imagen*/
+.imgRedes:hover {
+  height: 35px;
+}
+
+.imgIndex {
+  /*transicion de imagenes*/
+  height: 200px;
+  transition-duration: 2s;
+}
+
+/*propiedad de duracion Imagen*/
+.imgIndex:hover {
+  height: 400px;
+}
+
+/*transicion de imagenes*/
+.imgProd {
+  width: 450px;
+  height: 400px;
+  transition-duration: 2;
+}
+/*propiedad de duracion Imagen*/
+.imgProd:hover {
+  height: 500px;
+  width: 550px;
+}
+.imgCarousel {
+  width: auto;
+  height: 400px;
+  max-height: 500px;
+  text-align: center;
+}
+.carousel-inner {
+  position: relative;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+/* DEFINO ESTILOS POR SELECTOR  */
+table {
+  color: rgb(1, 15, 1);
+  border-style: solid;
+  font-style: italic;
+  border: solid;
+}
+
+h1 {
+  color: rgb(155, 57, 155);
+  font-style: oblique;
+  font-family: $font-family;
+  text-align: center;
+}
+
+body {
+  background-color: rgb(92, 92, 228);
+  margin-left: 50px;
+  margin-right: 50px;
+  color: burlywood;
+  font-family: $font-family;
+}
+
+h2 {
+  color: $color-parrafos;
+  border: rgb(28, 19, 66);
+}
+ul {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+footer {
+  background-image: linear-gradient(rgb(24, 50, 122), rgb(85, 57, 243));
+  margin: 1px;
+}
+
+header {
+  background-color: rgb(246, 148, 250);
+}
+
+div {
+  color: rgb(5, 9, 15);
+}
+
+/* DEFINO ESTILOS POR MEDIO DE ETIQUETAS*/
+#titulo {
+  color: rgb(71, 71, 231);
+}
+
+#lista {
+  color: rgb(221, 255, 126);
+}
+
+/*MEDIA QUERY*/
+
+//MOVILES VERTICALES
+@media only screen and (min-widht: 600px) {
+  body {
+    background-color: rgb(214, 140, 214);
+    height: $height;
+    width: $width;
+  }
+  header {
+    width: $width;
+    height: $height;
+  }
+  footer {
+    width: $width;
+    height: $height;
+  }
+}
+//MOVILES HORIZONTAL/TABLET VERTICAL
+@media only screen and (min-width:768px){}
+//TABLET HORIZONTAL/ESCRITORIOS NORMALES
+@media only screen and (min-width:1024px){}
+//ESCRITORIOS ANCHOS
+@media only screen and (min-width:1200px){}
+
+
+
+//MIXIN CODIGO QUE SOLO SE EJECUTA CUANDO YO LO LLAME
+@mixin titulo($colorTexto, $colorFondo, $tamanioTexto) {
+  color: $colorTexto;
+  background-color: $colorFondo;
+  font-size: $tamanioTexto;
+  font-family: $font-family;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  border: 1px solid white;
+}
+#tituloTabla {
+  @include titulo(rgb(187, 187, 187), rgb(27, 27, 27), 40px);
+}
